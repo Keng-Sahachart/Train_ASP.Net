@@ -44,5 +44,19 @@ namespace HelloWorld
 
             Response.RedirectPermanent("ShowData_ByCookie.aspx");
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.RedirectPermanent("ChatRoom.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Session["Name"] = txt_ss_Name.Text;
+            Session["LastName"] = txt_ss_LastName.Text;
+
+            //Response.RedirectPermanent("ShowData_BySession.aspx");
+            Server.Transfer("ShowData_BySession.aspx");
+        }
     }
 }
