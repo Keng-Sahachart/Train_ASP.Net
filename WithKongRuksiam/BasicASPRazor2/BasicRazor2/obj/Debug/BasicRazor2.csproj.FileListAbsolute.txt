@@ -1,0 +1,90 @@
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\csc.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\csc.exe.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\csc.rsp
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\csi.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\csi.rsp
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\System.AppContext.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\System.Collections.Immutable.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\System.IO.FileSystem.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\System.Reflection.Metadata.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\vbc.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\vbc.exe.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\vbc.rsp
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\VBCSCompiler.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\roslyn\VBCSCompiler.exe.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\BasicRazor2.dll.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\BasicRazor2.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\BasicRazor2.pdb
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\Microsoft.Web.Infrastructure.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.Helpers.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.Razor.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.WebPages.Deployment.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.WebPages.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.WebPages.Razor.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.Helpers.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.Razor.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.WebPages.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.WebPages.Deployment.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\bin\System.Web.WebPages.Razor.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\obj\Debug\BasicRazor2.csprojResolveAssemblyReference.cache
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\obj\Debug\BasicRazor2.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\New folder\BasicRazor2\obj\Debug\BasicRazor2.pdb
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\csc.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\csc.exe.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\csc.rsp
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\csi.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\csi.rsp
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\System.AppContext.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\System.Collections.Immutable.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\System.IO.FileSystem.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\System.Reflection.Metadata.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\vbc.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\vbc.exe.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\vbc.rsp
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\VBCSCompiler.exe
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\roslyn\VBCSCompiler.exe.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\BasicRazor2.dll.config
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\BasicRazor2.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\BasicRazor2.pdb
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\Microsoft.Web.Infrastructure.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.Helpers.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.Razor.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.Deployment.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.Razor.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.Helpers.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.Razor.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.Deployment.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.Razor.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.csprojResolveAssemblyReference.cache
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.pdb
