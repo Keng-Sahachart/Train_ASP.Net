@@ -21,23 +21,46 @@
             border: 1px solid #c0c0c0;
             padding: 5px;
         }
+        .head{
+            background-color:#E8E8E8;
+            font-weight:bold;
+            color: #FFF;
+        }
+        .alt{
+            background-color:#E8E8E8;
+            color:#000;
+        }
 
     </style>
 </head>
 
 
-<body>
+<body class="container-fluid">
     Hello DataBase
     @{ 
+        var search = Request.QueryString["search"];
+
         var db = Database.Open("CustomerDB");
         var select = db.Query("select * from customer"); // ดึงข้อมูล
-        var grid = new WebGrid(source:  select);  // แสดง
-        
+        var grid = new WebGrid(source:  select,rowsPerPage:10);  // แสดง
+        if (!search.IsEmpty())
+        {
+            select = db.Query("select * from customer where name like '%" + search + "%'");
+            grid = new WebGrid(source:select);
+        }
+
     }
-    <h2>แสดงข้อมูล</h2>
+    <h2>แสดงข้อมูลลูกค้าในฐานข้อมูล</h2>
+    <form method="get">
+        Search:<input type="text" id="usr" name="search" />
+        <input type="submit" value="search" class="btn btn-primary" />
+    </form>
+
     @grid.GetHtml(
-        tableStyle:"grid1",
-        ta
+        tableStyle:"grid1", // ตาราง
+        headerStyle:"head", // สี หัว ตาราง
+        alternatingRowStyle:"alt" // Row สลับสี
+
     )
 </body>
 </html>
