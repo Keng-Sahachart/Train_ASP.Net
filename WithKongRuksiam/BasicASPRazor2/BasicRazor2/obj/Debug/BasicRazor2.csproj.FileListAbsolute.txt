@@ -88,3 +88,5 @@ E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\Syst
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.csprojResolveAssemblyReference.cache
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.dll
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.pdb
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\WebMatrix.Data.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\WebMatrix.Data.xml

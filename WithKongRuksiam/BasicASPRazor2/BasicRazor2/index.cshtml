@@ -1,32 +1,43 @@
 ﻿<!DOCTYPE html>
+@using WebMatrix.Data;
 <html>
 <head>
-    <title>Train Basic ASP.Net Razor With Kong RukSiam</title>
-</head>
-<body>
-    @{ 
-        var score = 100;
-        var name = "Sahachart Studio";
-        var Status = true;
-        int avg = 80;
-        DateTime now = DateTime.Now;
-    }
-    <div>        Hello World    </div> 
-    <h3>@now</h3>
-    <h3>@name</h3>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    @* Content Block เอาหน้า อื่น มาแสดง ไม่ต้องมี ;*@
-    @RenderPage("LoopPage.cshtml")
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <style>
+        .grid1 {
+            margin:4px;
+            border-collapse:collapse;
+            width:600px;
+        }
+        .grid1 th, .grid1 td{
+            border: 1px solid #c0c0c0;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    Hello DataBase
     @{ 
-        if (score >= 100)
-        {
-            <h2 style="color:green">Mission Complete</h2>
-        }
-        else
-        {
-            <h2 style="color:red">Mission Fail</h2>
-        }
+        var db = Database.Open("CustomerDB");
+        var select = db.Query("select * from customer"); // ดึงข้อมูล
+        var grid = new WebGrid(source:  select);  // แสดง
+        
     }
+    <h2>แสดงข้อมูล</h2>
+    @grid.GetHtml(
+        tableStyle:"grid1",
+        ta
+    )
 </body>
 </html>
