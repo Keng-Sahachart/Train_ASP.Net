@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Basic ASP.Net Razor With Kong RukSiam</title>
+</head>
+<body>
+    @{ 
+        var score = 100;
+        var name = "Sahachart Studio";
+        var Status = true;
+        int avg = 80;
+        DateTime now = DateTime.Now;
+    }
+    <div>        Hello World    </div> 
+    <h3>@now</h3>
+    <h3>@name</h3>
+
+    @* Content Block เอาหน้า อื่น มาแสดง ไม่ต้องมี ;*@
+    @RenderPage("LoopPage.cshtml")
+    
+    @{ 
+        if (score >= 100)
+        {
+            <h2 style="color:green">Mission Complete</h2>
+        }
+        else
+        {
+            <h2 style="color:red">Mission Fail</h2>
+        }
+    }
+</body>
+</html>
