@@ -1,0 +1,9 @@
+﻿@using WebMatrix.Data;
+
+@{ 
+    var id = Request.QueryString["id"];
+    var db = Database.Open("CustomerDB");
+    var sql = "delete from customer where id=@0";
+    db.Execute(sql, id);
+    Response.Redirect("index.cshtml");
+}

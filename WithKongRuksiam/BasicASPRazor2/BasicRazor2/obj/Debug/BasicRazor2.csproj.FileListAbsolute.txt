@@ -85,8 +85,10 @@ E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\Syst
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.xml
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.Deployment.xml
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\System.Web.WebPages.Razor.xml
-E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.csprojResolveAssemblyReference.cache
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.dll
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.pdb
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\WebMatrix.Data.dll
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\bin\WebMatrix.Data.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.csprojAssemblyReference.cache
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.csproj.CoreCompileInputs.cache
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\BasicASPRazor2\BasicRazor2\obj\Debug\BasicRazor2.csproj.CopyComplete
