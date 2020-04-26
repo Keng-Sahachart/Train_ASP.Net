@@ -2,3 +2,7 @@ E:\#GitHubRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.
 E:\#GitHubRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.pdb
 E:\#GitHubRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
 E:\#GitHubRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.dll
+C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.pdb
+C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
+C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
