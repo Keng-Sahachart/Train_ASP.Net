@@ -50,7 +50,7 @@
 
         var db = Database.Open("CustomerDB");
         var select = db.Query("select * from customer"); // ดึงข้อมูล
-        var grid = new WebGrid(source: select, rowsPerPage: 10);  // แสดง
+        var grid = new WebGrid(source:  select, rowsPerPage: 10);  // แสดง
         if (!search.IsEmpty())
         {
             select = db.Query("select * from customer where name like '%" + search + "%'");

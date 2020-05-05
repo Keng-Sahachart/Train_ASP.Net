@@ -64,4 +64,8 @@ E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\obj\Debug\Ra
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\obj\Debug\RazorPoll.csproj.CopyComplete
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\obj\Debug\RazorPoll.dll
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\obj\Debug\RazorPoll.pdb
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\bin\WebMatrix.Data.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\bin\WebMatrix.Data.xml
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\bin\Newtonsoft.Json.dll
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\bin\Newtonsoft.Json.xml
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\AspRazorPoll\RazorPoll\obj\Debug\RazorPoll.csprojAssemblyReference.cache

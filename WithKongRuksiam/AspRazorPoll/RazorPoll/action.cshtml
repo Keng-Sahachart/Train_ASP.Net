@@ -1,0 +1,32 @@
+﻿@using WebMatrix.Data;
+@using RazorPoll;
+@using Newtonsoft.Json;
+@{
+    // ทำการ บันทึก ข้อมูล ที่ ฟอร์ม ส่งมา
+    string language = Request.Form["language"];
+
+    var DB = Database.Open("VoteDB");
+    var sqlInsert = "insert  into pollTb ({0}) values('{1}')";
+    sqlInsert = string.Format(sqlInsert, "language", language);
+    DB.Execute(sqlInsert);
+
+    //******************************************************//
+    //ทำการ select ออกมาแสดงผล
+
+    //select count
+    var sqlSelCnt = "SELECT [language],count(*) as likeCount  FROM [VoteDB].[dbo].[pollTb]  group by language";
+    var rwRsltCnt = DB.Query(sqlSelCnt);
+
+    // วนลูปเอา record ใส่ List เพื่อจะ convert เป็นjson
+    var itmLst = new List<CItem>();
+    foreach(var row in rwRsltCnt) {
+        itmLst.Add(new CItem { label = row["language"], value = row["likeCount"].ToString() });
+    }
+
+    // ติดตั้ง nuget newtonsoft.json
+    var json = JsonConvert.SerializeObject(itmLst);
+    var data = string.Join(",", json);
+    Response.Write(data);
+
+
+}

@@ -1,27 +1,53 @@
-﻿<!DOCTYPE html>
+﻿@using WebMatrix.Data;
+<!DOCTYPE html>
+
 <html>
 <head>
     <title>Index Poll</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @*<meta charset="utf-8">*@
+    @*<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">*@
+    @* --------------------------------------------------------------------------------------------------- *@
+
+    @* จาก getbootstrap ติด .ajax is not a function*@
     @*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>*@
 
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="~/Scripts/jquery-3.0.0.slim.min.js"></script>
-    <script src="~/Scripts/popper.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    @* --------------------------------------------------------------------------------------------------- *@
 
-    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />*@
-    @*<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>*@
+    @* จาก w3 / ผ่าน*@
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>*@
 
+    @* --------------------------------------------------------------------------------------------------- *@
+
+    @*  *@
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+        <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+        <script src="~/Scripts/popper.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>*@
+
+    @* --------------------------------------------------------------------------------------------------- *@
+    @* CDN จาก Pj ตัวอย่าง --> ไม่ใช้ .js Bootstrap ใช้แต่ .css *@
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" />
 
+    @* --------------------------------------------------------------------------------------------------- *@
+    <link rel="shortcut icon" href="#" />  @* ปิด console error ฟ้องไม่เจอ favicon.ico *@
+
+    <style>
+        .GridAlt {
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -53,7 +79,72 @@
             <div id="chart"></div>
         </form>
 
-
     </div>
+
+    <br />
+    @{
+        var vtDb = Database.Open("VoteDB");
+        var sqlSel = vtDb.Query("Select * from pollTb");
+
+        var webgrid = new WebGrid(source: sqlSel, rowsPerPage: 20);
+
+    }
+    <H2>ข้อมูลทั้งหมด</H2>
+    @webgrid.GetHtml(alternatingRowStyle: "GridAlt"
+            ,tableStyle:"table"
+            , headerStyle: "thead-dark"            );
+
+    <script>
+        /* how to use morris donut
+        * https://morrisjs.github.io/morris.js/donuts.html
+        * Morris.Donut(options)
+        * data (required) :  ค่าที่เป็น รูปแบบ json
+        * element (required) : element ที่จะ ใส่ graph เข้าไป
+        * colors :อาร์เรย์ ค่าสี hex / ถ้าสีหมด แล้วจะวนมาค่าสีเดิม
+        * formatter :
+        * resize :
+        */
+
+        $(document).ready(function () {
+            //// สร้าง event ที่ปุ่ม
+            $('#like_form').on('submit', function (event) {
+                event.preventDefault(); // ทำให้ เวลา กด submit จะไม่ refresh หน้า หรือ เปลี่ยนหน้าใหม่ // ตอนทดสอบ อันเอาไปไว้นอก Event เลยใช้ไม่ได้ผล
+                var checked = $('input[name=language]:checked', '#like_form').val(); // get val จาก radio ที่เลือก
+                console.log("checked => " + checked);
+                //alert(checked);
+                if (checked == undefined) {
+                    alert("กรุณาเลือก");
+                } else {
+                    var form_data = $(this).serialize();
+                    console.log("form_data =>" + form_data);
+                    //alert("form_data");
+                    var DivChart = $("#chart");
+                    $.ajax({
+                        url: "action.cshtml",
+                        method: "post",
+                        data: form_data,
+                        dataType: "json",
+                        success: function (dataJson) {
+                            $("#like_form")[0].reset(); //ทำการ Reset ฟอร์ม
+                            ////alert("reset");
+                            console.log("reset #like_form");
+
+                            console.log(dataJson);
+
+                            DivChart.html("");
+                            var donut = Morris.Donut({
+                                element: "chart",
+                                data: dataJson
+                            });
+                        }
+                    })
+                }
+            });
+        });
+
+        
+    </script>
+
+
 </body>
 </html>
