@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_workShop_RazorPoll", "RazorPoll\Lab2_workShop_RazorPoll.csproj", "{4A1B3C8F-E7BC-407E-8B83-227371F9BF0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A1B3C8F-E7BC-407E-8B83-227371F9BF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1B3C8F-E7BC-407E-8B83-227371F9BF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1B3C8F-E7BC-407E-8B83-227371F9BF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1B3C8F-E7BC-407E-8B83-227371F9BF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03F07F38-8FCF-4D73-ACA0-5EE768311FDA}
+	EndGlobalSection
+EndGlobal
