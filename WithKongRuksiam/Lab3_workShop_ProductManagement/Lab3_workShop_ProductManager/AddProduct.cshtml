@@ -1,7 +1,33 @@
-﻿<!DOCTYPE html>
+﻿@using WebMatrix.Data ;
+@{ 
+    var db = Database.Open("StockDB");
+
+    /* Upload Image */
+    WebImage photo = null;
+    var newFileName = "";
+    var imagePath = "";
+    if (IsPost)
+    {
+        photo = WebImage.GetImageFromRequest();
+        if (photo != null)
+        {
+            newFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(photo.FileName);
+            imagePath = @"\ImageStore\" + newFileName;
+            photo.Save(@"~\" + imagePath);
+        }
+    }
+
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Add Product</title>
+
+    @* By Pj KongRukSiam *@
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
+    @* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>*@
+    @*  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
 
     @* By Nuget *@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
@@ -9,11 +35,14 @@
     <script src="~/Scripts/popper.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 
-    @* By Pj KongRukSiam *@
-    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
-    @* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>*@
-    @*  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+    <style>
+        .vcenter {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
 
+    </style>
 
 
 
@@ -21,28 +50,45 @@
 <body>
 
     <div class="container-fluid">
-            <div class="">
-                <h1>เพิ่มข้อมูลสินค้า</h1>
+            <div class="row" style="width: 100%;border-style: dotted;">
+                <div style="width: 100%;border-style: solid;">
+                    <h1>เพิ่มข้อมูลสินค้า</h1>
+                    <div class="col-md-8">
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="usr">ชื่อสินค้า</label>
+                                <input type="text" class="form-control" name="name" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">ราคาสินค้า</label>
+                                <input type="text" class="form-control" name="price" required/>
+                            </div>
 
-                <div class="col-md-8">
-                    <form action="/" method="post" enctype="multipart/form-data">
-                        <div class="form-group">
-                            <label for="usr">ชื่อสินค้า</label>
-                            <input type="text" class="form-control" name="name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">ราคาสินค้า</label>
-                            <input type="text" class="form-control" name="price" />
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">ภาพประกอบ:</label>
-                            <input type="file" name="image" value="" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="name" value="บันทึก" class="btn btn-success" />
-                            <a href="~/index.cshtml" class="btn btn-primary">ดูข้อมูลสินค้า</a>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <label for="sell" name="">ประเภทสินค้า</label>
+                                @{     
+                                    var data = db.Query("SELECT [id],[name] FROM [category]");                               
+                                }
+                                <select class="form-control">
+                                    <option value="1">11</option>
+                                    <option value="2">22</option>
+                                    @foreach (var row in data)
+                                    {
+                                    <option value="@row["id"]">@row["name"]</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pwd">ภาพประกอบ:</label>
+                                <input type="file" name="image" value="" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="name" value="บันทึก" class="btn btn-success" />
+                                <a href="~/index.cshtml" class="btn btn-primary">ดูข้อมูลสินค้า</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

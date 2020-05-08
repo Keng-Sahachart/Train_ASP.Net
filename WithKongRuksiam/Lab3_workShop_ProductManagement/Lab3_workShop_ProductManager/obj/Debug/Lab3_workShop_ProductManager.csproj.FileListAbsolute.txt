@@ -62,8 +62,8 @@ E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\bin\System.Web.WebPages.Razor.xml
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\bin\WebMatrix.Data.xml
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\obj\Debug\Lab3_workShop_ProductManager.csprojAssemblyReference.cache
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\obj\Debug\Lab3_workShop_ProductManager.csproj.CoreCompileInputs.cache
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\obj\Debug\Lab3_workShop_ProductManager.csproj.CopyComplete
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\obj\Debug\Lab3_workShop_ProductManager.dll
 E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\obj\Debug\Lab3_workShop_ProductManager.pdb
+E:\#GitHubRepo\Train_ASP.Net\WithKongRuksiam\Lab3_workShop_ProductManagement\Lab3_workShop_ProductManager\obj\Debug\Lab3_workShop_ProductManager.csprojAssemblyReference.cache
