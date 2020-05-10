@@ -53,6 +53,7 @@
     <div class="container-fluid">
         <h2 class="display-2">Hello</h2>
 
+        @* form ใช้ ajax จะต้องไม่มี action เพราะจะระบุที่คำสั่ง js .ajax แทน *@
         <form class="form-group" id="like_form" method="post">
             <div class="form-group">
                 <label>Vote Programming Language</label>
@@ -119,7 +120,14 @@
                     console.log("form_data =>" + form_data);
                     //alert("form_data");
                     var DivChart = $("#chart");
-                    $.ajax({
+
+                    /*how to use => https://www.w3schools.com/jquery/ajax_ajax.asp
+                     * url: =>	Specifies the URL to send the request to. Default is the current page
+                     * data: =>	Specifies data to be sent to the server
+                     * dataType: => The data type expected of the server response.
+                     * success:(result,status,xhr) =>	A function to be run when the request succeeds
+                    */
+                    $.ajax({   
                         url: "action.cshtml",
                         method: "post",
                         data: form_data,
@@ -131,6 +139,7 @@
 
                             console.log(dataJson);
 
+                            // หน้านี้ไม่ได้ วาดหน้าใหม่ จาก action แต่เป็นการรับ data มา แล้วใช้ morris ที่ import อยู่ในหน้านี้อยู่แล้ว ทำการ "วาด" ด้วย data ที่ได้มา
                             DivChart.html("");
                             var donut = Morris.Donut({
                                 element: "chart",

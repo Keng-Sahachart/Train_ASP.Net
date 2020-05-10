@@ -24,9 +24,9 @@
     }
 
     // ติดตั้ง nuget newtonsoft.json
-    var json = JsonConvert.SerializeObject(itmLst);
-    var data = string.Join(",", json);
-    Response.Write(data);
+    var json = JsonConvert.SerializeObject(itmLst); // convert ข้อมูล เป็นรูปแบบ Json 
+    var data = string.Join(",", json);  //  convert ข้อมูล เป็นรูปแบบ Json 
+    Response.Write(data); // ส่งค่ากลับไป ที่ หน้า index
 
 
 }

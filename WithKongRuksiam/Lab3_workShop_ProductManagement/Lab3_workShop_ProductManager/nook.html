@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>ดูสินค้า</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="/Scripts/popper.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="/AddProduct.cshtml" class="btn btn-success">เพิ่มสินค้า</a>
+        <div>เลือกสินค้าตามราคาที่ท่านต้องการ</div>
+        <div>
+            <input id="price" class="form-control" type="range" min="1000" max="50000" step="1000" value="1000" />
+            <h3 id="price_range"></h3>
+            <div id="product_loading">
+                <div class="row">
+                        <div class="col-md-4">
+                            <img src="\ImageStore\bcdf1bc5-99e6-4913-b6fb-f3f640ffc8d5_6aaea22a-a47c-483e-a872-8e1a2912e56e_c4.jpg" width="300px" height="300px" alt="เครื่องซักผ้า" />
+                            <h3>ชื่อสินค้า เครื่องซักผ้า</h3>
+                            <h4 style="color:red">ราคา: $40,000.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เครื่องใช้ไฟฟ้า</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\5b667d10-a4c9-46f4-82d4-6056cb00adea_29fbcd70-3134-452c-b2c3-4240a017cdec_new-8081-720968-1-zoom.jpg" width="300px" height="300px" alt="กางเกง" />
+                            <h3>ชื่อสินค้า กางเกง</h3>
+                            <h4 style="color:red">ราคา: $500.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เสื้อผ้าเครื่องแต่งกาย</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\4ab366be-0626-41af-8c31-502bd819d57a_c4c5bcbc-3cd6-4885-8201-85cb68f8db41_C1.jpg" width="300px" height="300px" alt="หูฟัง" />
+                            <h3>ชื่อสินค้า หูฟัง</h3>
+                            <h4 style="color:red">ราคา: $5,000.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เครื่องใช้ไฟฟ้า</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\fb22fc45-288f-4f28-a9cf-fa5e6b5cb058_3925f20f-bfb6-43fb-b14b-5b8e6c94ff7c_c5.jpg" width="300px" height="300px" alt="เครื่องชงกาแฟ" />
+                            <h3>ชื่อสินค้า เครื่องชงกาแฟ</h3>
+                            <h4 style="color:red">ราคา: $527.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เครื่องใช้ไฟฟ้า</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\0a246ae1-a3e6-4899-8e94-199013322d46_e3a0d1fe-0ecb-4bb0-92f6-94387fcc433b_c6.jpg" width="300px" height="300px" alt="เครื่องปั่นน้ำผลไม้" />
+                            <h3>ชื่อสินค้า เครื่องปั่นน้ำผลไม้</h3>
+                            <h4 style="color:red">ราคา: $4,000.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เครื่องใช้ไฟฟ้า</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\d35e91ca-83e9-4f18-b3fb-6de7ff7768a0_311b3025-94ce-4b2d-b843-810244a64b8e_c3.jpg" width="300px" height="300px" alt="เคสคอมพิวเตอร์" />
+                            <h3>ชื่อสินค้า เคสคอมพิวเตอร์</h3>
+                            <h4 style="color:red">ราคา: $8,000.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เครื่องใช้ไฟฟ้า</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\bb780cf9-618a-4b60-a512-f2f28f195453_prong.jpg" width="300px" height="300px" alt="กระโปรง" />
+                            <h3>ชื่อสินค้า กระโปรง</h3>
+                            <h4 style="color:red">ราคา: $25,000.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: เสื้อผ้าเครื่องแต่งกาย</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\8c28c9c6-3503-4364-863e-00d02fc70235_e7319ca5-a15c-4b25-962d-6220c97d6e62_8.jpg" width="300px" height="300px" alt="มือถือสีดำ" />
+                            <h3>ชื่อสินค้า มือถือสีดำ</h3>
+                            <h4 style="color:red">ราคา: $5,900.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: Smart Phone</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\7fcbcde6-efe3-45da-a534-6af6fccc582e_93aa7ae6-dd33-462d-bf72-a2e84b8816ab_10.jpg" width="300px" height="300px" alt="มือถือสีแดง" />
+                            <h3>ชื่อสินค้า มือถือสีแดง</h3>
+                            <h4 style="color:red">ราคา: $1,500.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: Smart Phone</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\a5f66617-a729-44eb-807a-9944283a6d80_60f1209e-ab12-4ce3-8708-a10bb1396759_1.jpg" width="300px" height="300px" alt="มือถือสีเขียว" />
+                            <h3>ชื่อสินค้า มือถือสีเขียว</h3>
+                            <h4 style="color:red">ราคา: $3,500.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: Smart Phone</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="\ImageStore\442b69f4-604f-4a82-87b1-b81d30b6bf47_8ecf3db9-9512-43b9-b33a-430db76b8aa8_2.jpg" width="300px" height="300px" alt="Flasdrive" />
+                            <h3>ชื่อสินค้า Flasdrive</h3>
+                            <h4 style="color:red">ราคา: $7,999.00</h4>
+                            <h4 class="text-black-50 text-muted">ประเภทสินค้า: อุปกรณ์คอมพิวเตอร์</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('#price').change(function () {
+                var price = $('#price').val();
+                $('#price_range').text("Price:" + price);
+
+                $.ajax({
+                    url: "load_product.cshtml",
+                    method: "POST",  // case insentive
+                    data: { price: price }, //ใช้เมาส์คลิกดู IDE จะรู้เองว่า price ตัวที่ 1 เป็น key แล้วตัวที่ 2 เป็น ตัวแปร 
+                    success: function (data) {  // จะรับค่ามาเป็น html
+                        $("#product_loading").fadeIn(500).html(data); //Case 1 ต้องรับมาเป็น string เท่านั้น เพราะใช้คำสั่ง .html()
+                    }
+                });
+
+            });
+        });
+    </script>
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="http://localhost:5941/072db7aea0264658b49ce1e6e30e25ea/browserLink" async="async" id="__browserLink_initializationData" data-requestId="10bd841bc26b47189082c3d8b195bbcd" data-appName="Chrome"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
