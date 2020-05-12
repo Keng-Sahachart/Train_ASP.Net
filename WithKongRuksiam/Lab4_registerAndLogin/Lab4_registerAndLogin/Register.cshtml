@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+@using WebMatrix.Data
+@{
+    var db = Database.Open("MemberDB");
+
+    if (IsPost)
+    {
+        var user = Request.Form["usr"];
+        var password = Request.Form["pwd"];
+        var name = Request.Form["name"];
+        var insert = "insert into [member] (username,password,fname) values(@0,@1,@2)";
+
+        db.Execute(insert, user, password, name);
+
+
+        <script>
+            alert("บันทึกข้อมูลเรียบร้อย");
+            window.location = '@string.Format("{0}{1}",Request.ApplicationPath,"index.cshtml")'; //'https://www.google.com'; // 
+
+        </script>
+    }
+
+}
+<html>
+<head>
+    <title>สมัครสมาชิก</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h2>ระบบลงทะเบียนใช้งาน</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="usr">ชื่อผู้ใช้</label>
+                        <input type="text" class="form-control" value="" name="usr" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">รหัสผ่าน</label>
+                        <input type="password" class="form-control" value="" name="pwd" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" value="บันทึก" />
+                        <input type="reset" name="btnReset" value="ยกเลิก" class="btn btn-danger" />
+                        <a href="~/Login.cshtml" class="btn btn-outline-dark">เข้าใช้งาน</a> @* ใน clipสอนใช้ V3 จะใช้ btn-default แต่ใน V4 ไม่มี  *@
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
