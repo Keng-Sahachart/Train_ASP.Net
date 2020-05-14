@@ -1,9 +1,72 @@
 ﻿<!DOCTYPE html>
+@using WebMatrix.Data
+@{
+    var db = Database.Open("MemberDB");
+
+    if (IsPost)
+    {
+        var usr = Request.Form["usr"];
+        var pwd = Request.Form["pwd"];
+
+        var sqlSelect = "select status,fname from member where [username]=@0 and [password]=@1";
+        var dataRow = db.QuerySingle(sqlSelect, usr, pwd);
+
+        if (dataRow != null)
+        {
+            <script>alert("พบข้อมูล")</script>
+            if (dataRow["status"] == "admin")
+            {
+                Session["name"] = "Admin";
+                Response.Redirect("~/admin.cshtml");
+            }
+            if(dataRow["status"] == "user")
+            {
+                Session["name"] = dataRow["fname"];
+                Response.Redirect("~/user.cshtml");
+            }
+        }
+        else
+        {
+            <script>alert("ไม่พบข้อมูล")</script>
+        }
+
+    }
+}
 <html>
 <head>
-    <title></title>
+    <title>ลงชื่อเข้าใช้งาน</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+
 </head>
 <body>
+
+    <div class="container-fluid">
+        <h2>ลงชื่อเข้าใช้งาน</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="usr">ชื่อผู้ใช้:</label>
+                        <input type="text" value="" class="form-control" name="usr" placeholder="Your User name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd"></label>
+                        <input type="password" value="" class="form-control" name="pwd" required placeholder="Your password" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn btn-success" />
+                        <a href="~/Register.cshtml" class="btn btn-outline-secondary">สมัครสมาชิก</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

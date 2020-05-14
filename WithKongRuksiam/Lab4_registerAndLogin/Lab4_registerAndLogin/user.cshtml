@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+@{
+    if (Session["name"] == null)
+    {
+        <script>
+            alert("คุณยังไม่ Login");
+            @*window.location = '@string.Format("{0}{1}",Request.ApplicationPath,"Login.cshtml")';*@
+        </script>
+    }
+
+}
+<html>
+<head>
+    <title>USer</title>
+</head>
+<body>
+    <div class="jumbotron-fluid text-center">
+
+
+        @( (Session["name"] != null ? @Session["name"].ToString() : "ไม่พบข้อมูลผู้ใช้") ) 
+        <br />
+        @if (Session["name"] != null)
+        {
+            <h1>@Session["name"].ToString()</h1>
+        }
+        else
+        {
+            <h1>ไม่พบข้อมูลผู้ใช้</h1>
+        }
+    </div>
+</body>
+</html>

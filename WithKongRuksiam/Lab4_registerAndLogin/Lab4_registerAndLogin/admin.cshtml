@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+@{
+    if (Session["name"] == null)
+    {
+        <script>
+            alert("คุณยังไม่ Login");
+            window.location = '@string.Format("{0}{1}",Request.ApplicationPath,"Login.cshtml")';
+        </script>
+    }else if (Session["name"].ToString() != "Admin")
+    {
+        <script>
+            @*@Session["name"] = null;*@
+            alert("คุณไม่ใช่ Admin");
+            window.location = '@string.Format("{0}{1}",Request.ApplicationPath,"Login.cshtml")';
+        </script>
+    }
+}
+<html>
+<head>
+    <title>Admin</title>
+
+    <meta name="viewport" content="width=device-width,initial-sclale=1" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron-fluid text-center">
+        <h1>สวัสดี: @( (Session["name"] != null ? @Session["name"].ToString() : "ไม่พบข้อมูลผู้ใช้") ) </h1>
+    </div>
+</body>
+</html>
