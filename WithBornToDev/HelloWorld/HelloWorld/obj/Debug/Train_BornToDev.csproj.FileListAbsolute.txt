@@ -6,3 +6,8 @@ C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.d
 C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.pdb
 C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
 C:\Repository\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.dll.config
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.dll
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.pdb
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

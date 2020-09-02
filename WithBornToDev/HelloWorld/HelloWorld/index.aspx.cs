@@ -9,7 +9,7 @@ namespace HelloWorld
 {
     public partial class index : System.Web.UI.Page
     {
-        int y = 999;
+        //int y = 999;
         protected void Page_Load(object sender, EventArgs e)
         {
 

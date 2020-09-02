@@ -1,0 +1,5 @@
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.dll.config
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.dll
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\bin\HelloWorld.pdb
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Release\HelloWorld.dll
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\WithBornToDev\HelloWorld\HelloWorld\obj\Release\HelloWorld.pdb
