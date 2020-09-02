@@ -1,0 +1,7 @@
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\bin\shopingCartWorkshop.dll.config
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\bin\shopingCartWorkshop.dll
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\bin\shopingCartWorkshop.pdb
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.csprojAssemblyReference.cache
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.csproj.CoreCompileInputs.cache
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.dll
+E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.pdb
