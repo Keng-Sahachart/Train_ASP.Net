@@ -14,15 +14,18 @@ namespace shopingCartWorkshop
         protected void Page_Load(object sender, EventArgs e)
         {
             //string strcon = "Provider=sqloledb;Data Source=127.0.0.1;Initial Catalog=shoppingCart;User Id=sa;Password=P@ssw0rd;";
-            //sqlSvr = new SqlSvr(strcon);
-            //QryPrd();
+            String strcon = "Provider=sqloledb;Data Source=CO-SAHACHART\SQLEXPRESS;Initial Catalog=shoppingCart;User Id=sa;Password=P@ssw0rd;";
+
+            sqlSvr = new SqlSvr(strcon);
+            sqlSvr.Connect();
+            QryPrd();
         }
-        
+
         void QryPrd()
         {
-            //DataTable dtPdr = new DataTable();
-            //dtPdr = sqlSvr.QryDt("select * from product");
-            //gv_prd.DataSource = dtPdr;
+            DataTable dtPdr = new DataTable();
+            dtPdr = sqlSvr.QryDt("select * from product");
+            gv_prd.DataSource = dtPdr;
         }
     }
 }

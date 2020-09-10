@@ -5,3 +5,9 @@ E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorksho
 E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.csproj.CoreCompileInputs.cache
 E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.dll
 E:\#GitHubRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.pdb
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\bin\shopingCartWorkshop.dll.config
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\bin\shopingCartWorkshop.dll
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\bin\shopingCartWorkshop.pdb
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.csprojResolveAssemblyReference.cache
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.dll
+C:\Users\Sahachart\Documents\GitRepo\Train_ASP.Net\shoppingCart\shopingCartWorkshop\shopingCartWorkshop\obj\Debug\shopingCartWorkshop.pdb
