@@ -13,10 +13,8 @@ namespace shopingCartWorkshop
         SqlSvr sqlSvr;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string strcon = "Provider=sqloledb;Data Source=127.0.0.1;Initial Catalog=shoppingCart;User Id=sa;Password=P@ssw0rd;";
-            String strcon = "Provider=sqloledb;Data Source=CO-SAHACHART\SQLEXPRESS;Initial Catalog=shoppingCart;User Id=sa;Password=P@ssw0rd;";
-
-            sqlSvr = new SqlSvr(strcon);
+           
+            sqlSvr = new SqlSvr(Config.connString);
             sqlSvr.Connect();
             QryPrd();
         }
@@ -26,6 +24,7 @@ namespace shopingCartWorkshop
             DataTable dtPdr = new DataTable();
             dtPdr = sqlSvr.QryDt("select * from product");
             gv_prd.DataSource = dtPdr;
+            gv_prd.DataBind();
         }
     }
 }
