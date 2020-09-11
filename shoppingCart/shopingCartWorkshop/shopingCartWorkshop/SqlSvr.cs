@@ -5,6 +5,7 @@ using System.Web;
 using System.Data;
 using System.Data.OleDb;
 
+
 namespace shopingCartWorkshop
 {
     public class SqlSvr
@@ -28,6 +29,13 @@ namespace shopingCartWorkshop
             OleDbDataAdapter adapter = new OleDbDataAdapter(sql, conn);
             adapter.Fill(dtRes);
             return dtRes;
+        }
+
+        public void Excute(string sql)
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbDataAdapter adapter = new OleDbDataAdapter(sql, conn);
+          
         }
 
     }
