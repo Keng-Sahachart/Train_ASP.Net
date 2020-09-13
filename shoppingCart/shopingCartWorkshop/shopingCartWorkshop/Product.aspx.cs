@@ -26,48 +26,43 @@ namespace shopingCartWorkshop
             gv_prd.DataBind();
         }
 
-        protected void gv_prd_RowDataBound(object sender, GridViewRowEventArgs e)
+        protected void gv_prd_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.Row.RowType == DataControlRowType.DataRow)
+            if (e.CommandName == "Add2Cart")
             {
-                //*** Picture ***//
-                Image imgPicture = (Image)e.Row.FindControl("imgPicture");
-                if ((imgPicture != null))
-                {
-                    imgPicture.ImageUrl = "img/" + (string)DataBinder.Eval(e.Row.DataItem, "Picture");
+                string ProductId = e.CommandArgument.ToString();
+                DataTable dtCart = null;
+                DataRow drCartItem = null;
+
+                if (Session["Cart"] == null)
+                { // ถ้าไม่มี cart ให้สร้าง ขึ้นมาก่อน กำหนด column ให้เรียบร้อย
+                    dtCart = new DataTable();
+                    dtCart.Columns.Add("ProductId");
+                    dtCart.Columns.Add("Qty");
+                    Session["Cart"] = dtCart;   // บันทึกเป็น session ให้เรียบร้อย
                 }
 
-                //*** ProductID ***//
-                Label lblProductID = (Label)e.Row.FindControl("lblProductID");
-                if ((lblProductID != null))
-                {
-                    lblProductID.Text = DataBinder.Eval(e.Row.DataItem, "ProductID").ToString();
-                }
+                /* ถ้ามี table อยู่แล้ว 
+                 * ให้ get ออกมา แล้ว บันทึก item ใหม่ลงไป
+                    หรือถ้ามี item อยู่แล้ว ให้ update ลงไป
+                 */
+                dtCart = (DataTable)Session["Cart"];
 
-                //*** ProductName ***//
-                Label lblProductName = (Label)e.Row.FindControl("lblProductName");
-                if ((lblProductName != null))
+                drCartItem = dtCart.Select($"ProductId='ProductId'")[0];
+                if (drCartItem == null)
                 {
-                    lblProductName.Text = (string)DataBinder.Eval(e.Row.DataItem, "ProductName");
+                    drCartItem["ProductId"] = ProductId;
+                    drCartItem["Qty"] = 1;
+                    dtCart.Rows.Add(drCartItem);
                 }
-
-                //*** Price ***//
-                Label lblPrice = (Label)e.Row.FindControl("lblPrice");
-                if ((lblPrice != null))
+                else
                 {
-                    lblPrice.Text = DataBinder.Eval(e.Row.DataItem, "Price").ToString();
-                }
 
-                //*** AddToCart ***//
-                LinkButton lnkAddToCart = (LinkButton)e.Row.FindControl("lnkAddToCart");
-                if ((lnkAddToCart != null))
-                {
-                    lnkAddToCart.Text = "Add";
-                    lnkAddToCart.CommandName = "Add2Cart";
-                    lnkAddToCart.CommandArgument = DataBinder.Eval(e.Row.DataItem, "ProductID").ToString();
                 }
 
             }
         }
+
+     
     }
 }
