@@ -17,7 +17,7 @@ namespace shopingCartWorkshop
             sqlSvr.Connect();
             QryPrd();
         }
-        
+
         void QryPrd()
         {
             DataTable dtPdr = new DataTable();
@@ -48,21 +48,28 @@ namespace shopingCartWorkshop
                  */
                 dtCart = (DataTable)Session["Cart"];
 
-                drCartItem = dtCart.Select($"ProductId='ProductId'")[0];
-                if (drCartItem == null)
+                DataRow[] drSelect = dtCart.Select($"ProductId='{ProductId}'");
+              
+                if (drSelect.Length == 0)
                 {
-                    drCartItem["ProductId"] = ProductId;
-                    drCartItem["Qty"] = 1;
-                    dtCart.Rows.Add(drCartItem);
+                    DataRow drNew;
+                    drNew = dtCart.NewRow();
+                    drNew["ProductId"] = ProductId;
+                    drNew["Qty"] = 1;
+                    dtCart.Rows.Add(drNew);
                 }
                 else
                 {
-
+                    DataRow drPrdId;
+                    drPrdId = drSelect[0];
+                    //drCartItem["ProductId"] = ProductId;
+                    drPrdId["Qty"] = Convert.ToInt32( drPrdId["Qty"]) + 1;
                 }
 
+                Session["Cart"] = dtCart;
             }
         }
 
-     
+
     }
 }
